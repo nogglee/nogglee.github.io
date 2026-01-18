@@ -96,47 +96,22 @@ white { color: #f2f2f2; }
 .career_summary_box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 14px 16px; line-height: 1.6; margin-bottom: 12px; }
 .career_tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0 18px 0; }
 .career_right span { display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 6px; background: #474337; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2px; color: #FFCE2E; }
+.career_headline { font-size: 1.5rem; font-weight: 700; margin: 10px 0 18px 0; }
+.career_block { margin: 18px 0 22px 0; }
+.career_block_title { font-weight: 400; margin-bottom: 10px; border-left: 2px solid rgba(255,255,255,0.12); padding-left: 8px; color: #838383; }
+.career_list { margin: 0; padding-left: 18px; line-height: 1.7; opacity: 0.92; }
 
-.career_headline {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 10px 0 18px 0;
-}
 
-.career_block {
-  margin: 18px 0 22px 0;
-}
 
-.career_block_title {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
 
-.career_list {
-  margin: 0;
-  padding-left: 18px;
-  line-height: 1.7;
-  opacity: 0.92;
-}
 
-.career_links {
-  margin-top: 10px;
-  opacity: 0.9;
-}
 
-.career_link {
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.25);
-}
+.career_links { margin-top: 10px; opacity: 0.9; }
+.career_link { text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.25); }
+.career_link:hover { border-bottom-color: rgba(255,255,255,0.55); }
+.career_link_sep { opacity: 0.55; margin: 0 6px; }
 
-.career_link:hover {
-  border-bottom-color: rgba(255,255,255,0.55);
-}
 
-.career_link_sep {
-  opacity: 0.55;
-  margin: 0 6px;
-}
 
 .activities_list { width: 100%; display: flex; justify-content: flex-start; flex-direction: column; padding: 24px 0 6px 0; gap: 56px; }
 .activity_period { margin: 0px; font-size: 1rem; line-height: 1.75; }
