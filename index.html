@@ -1,15 +1,42 @@
 <!DOCTYPE html>
+<html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="프로덕트 관점으로 문제를 정의하고, UX와 DX를 함께 개선하는 개발자 이은지의 포트폴리오입니다.">
+
         <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32_32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16_16.png">
+        <link rel="canonical" href="https://nogglee.com/">
+
         <meta property="og:title" content="이은지 | 풀스택 개발자 포트폴리오">
-		<meta property="og:description" content="우연한 성공을 반복 가능한 성과로 바꾸는 개발자, 이은지입니다.">
+		<meta property="og:description" content="프로덕트 관점으로 문제를 정의하고, UX와 DX를 함께 개선하는 개발자 이은지의 포트폴리오입니다.">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://nogglee.com">
 		<meta property="og:image" content="https://nogglee.com/img/ogimage.png">
+        <meta property="og:site_name" content="이은지 포트폴리오">
+        <meta property="og:locale" content="ko_KR">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="이은지 | 풀스택 개발자 포트폴리오">
+        <meta name="twitter:description" content="프로덕트 관점으로 문제를 정의하고, UX와 DX를 함께 개선하는 개발자 이은지의 포트폴리오입니다.">
+        <meta name="twitter:image" content="https://nogglee.com/img/ogimage.png">
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "이은지",
+        "url": "https://nogglee.com",
+        "jobTitle": "Full Stack Developer",
+        "sameAs": [
+            "https://github.com/nogglee",
+            "https://velog.io/@nogglee/series"
+        ]
+        }
+        </script>
+
         <title>이은지 | 풀스택 개발자 포트폴리오</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./Constant.js"></script>
@@ -27,7 +54,7 @@
             <!-- 프로필 -->
             <div class="container_inner">
                 <div class="profile_section">
-                    <img id="profile">
+                    <img id="profile" alt="프로필 사진">
                     <div class="profile_info">
                         <h1>우연한 성공을 반복 가능한 성과로<br>바꾸는 개발자, <highlight>이은지</highlight>입니다.</h1>
                         <div class="social_links" id="profile-links"></div>
@@ -90,7 +117,7 @@
         </template>
 
         <template id="tpl-career-link">
-            <a target="_blank"><img></a>
+            <a target="_blank" rel="noopener noreferrer"><img></a>
         </template>
 
         <template id="tpl-career-title-block">
