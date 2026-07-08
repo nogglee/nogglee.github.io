@@ -20,6 +20,7 @@ function renderHeader() {
         const a = document.createElement('a');
         a.href = m.href;
         a.target = '_blank';
+        a.rel = 'noopener noreferrer';
         const img = document.createElement('img');
         img.className = 'menu';
         img.src = m.icon.startsWith('.') || m.icon.startsWith('http') ? m.icon : `https://skillicons.dev/icons?i=${m.icon}`;
@@ -35,6 +36,7 @@ function renderProfile() {
         const a = document.createElement('a');
         a.href = link.href;
         a.target = '_blank';
+        a.rel = 'noopener noreferrer';
         a.textContent = link.label;
         linksEl.appendChild(a);
         if (i < SITE.profile.links.length - 1) linksEl.appendChild(document.createTextNode('・'));
