@@ -220,7 +220,7 @@ const SITE = {
             period: '2026.05 ~ 2026.06',
             links: [
                 { href: 'https://github.com/nogglee-crew/todam', img: './img/icon-github.png', alt: 'GitHub' },
-                { href: 'https://todam.com', img: './img/icon-web.png', alt: 'Demo' },
+                { href: 'https://todam.app', img: './img/icon-web.png', alt: 'Demo' },
                 { href: 'https://www.figma.com/design/rn4Vgem0Uj28suP8TEZMbU/%ED%86%A0%EB%8B%B4-todam?node-id=8542-18666&t=Vb5ZUTnhJAmg9FpN-1', img: './img/icon-figma.png', alt: 'Figma' },
             ],
             entries: [
