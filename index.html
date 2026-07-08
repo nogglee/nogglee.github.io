@@ -3,525 +3,117 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16x16.png">
-        <meta property="og:title" content="포트폴리오 | 기획하는 개발자 이은지">
-		<meta property="og:description" content="기획자의 눈으로 일하는 개발자는 의도와 맥락을 놓치지 않습니다.">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32_32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16_16.png">
+        <meta property="og:title" content="이은지 | 풀스택 개발자 포트폴리오">
+		<meta property="og:description" content="우연한 성공을 반복 가능한 성과로 바꾸는 개발자, 이은지입니다.">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://nogglee.github.io">
-		<meta property="og:image" content="https://nogglee.github.io/img/ogimage.png">
-        <title>기획하는 개발자 | 이은지</title>
+		<meta property="og:url" content="https://nogglee.com">
+		<meta property="og:image" content="https://nogglee.com/img/ogimage.png">
+        <title>이은지 | 풀스택 개발자 포트폴리오</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./Constant.js"></script>
+        <script src="./data.js"></script>
+        <script src="./render.js"></script>
     </head>
     <body>
         <div id="header">
             <div class="sticky_sentinel"></div>
-            <a href="/" ><img id="logo" src="./img/logo.png"></a>
-            <div id="menu_group">
-                <a href="https://github.com/nogglee" target="_blank"><img class="menu" src="https://skillicons.dev/icons?i=github"></a>
-                <a href="https://www.linkedin.com/in/nogglee/" target="_blank"><img class="menu" src="https://skillicons.dev/icons?i=linkedin"></a>
-                <a href="mailto:dev@nogglee.com" target="_blank"><img class="menu" src="https://skillicons.dev/icons?i=gmail"></a>
-            </div>
+            <a href="/"><img id="logo"></a>
+            <div id="menu_group"></div>
         </div>
         <div class="container">
 
             <!-- 프로필 -->
             <div class="container_inner">
                 <div class="profile_section">
-                    <img src="./img/profile.png" id="profile">
+                    <img id="profile">
                     <div class="profile_info">
-                        <!-- <h1>안녕하세요</h1> -->
-                        <h1>서비스 기획 경험을 바탕으로<br> 제품을 이해하고 구현할 수 있는 <br>개발자 <highlight>이은지</highlight> 입니다.</h1>
-                        <div class="social_links">
-                            <a href="https://www.linkedin.com/in/nogglee/" target="_blank">LinkedIn</a>・
-                            <a href="https://github.com/nogglee" target="_blank">GitHub</a>・
-                            <a href="mailto:dev@nogglee.com" target="_blank">Email</a>
-                        </div>
+                        <h1>우연한 성공을 반복 가능한 성과로<br>바꾸는 개발자, <highlight>이은지</highlight>입니다.</h1>
+                        <div class="social_links" id="profile-links"></div>
                     </div>
                 </div>
             </div>
 
             <!-- 핵심역량 -->
-            <span class="sticky_sentinel"></span>
-            <div class="section_title section_anchor" id="core">
-                <div class="section_title_inner">
-                    <div class="dot_group">
-                        <a href="#core" style="z-index: 2;"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#career"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#projects"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#activities"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                    </div>
-                    <div class="sticky_inner"><h1>Core Competency</h1></div>
-                </div>
-            </div>
-
             <div class="container_inner">
-                <div class="core_section">
-                    <div class="problemsolve_group" id="core_01">
-                        <h1>문제 해결 방안을 <underline>논리적으로 설계</underline>합니다</h1><br>
-                        <p>서비스의 전체 흐름과 데이터의 관계를 설계함으로써 불필요한 시행착오를 줄이고, 팀 전체의 협업 효율을 이끌어냅니다.</p>
-                        <div class="problemsolve card_list">
-                            <div class="problemsolve card_item">
-                                <img class="problemsolve card_img" src="./img/market.png" alt="시장 분석 및 비즈니스 설계 자료"> 
-                                <div class="problemsolve card_info">
-                                    <div class="problemsolve card_title">시장 분석 · 비즈니스 설계</div>
-                                    <p>서비스를 만들기 전, 이 문제가 실제로 시장에 존재하는지부터 확인해야 한다고 생각했습니다.<br>
-                                        <q>누가, 왜 비용을 지불하는가</q> 를 중심으로 가설을 세우고, 지속 가능한 비즈니스 모델인지 검토했습니다.
-                                    </p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="문서화 과정 PDF" onclick="window.open(S3 + 'problemsolve/market.pdf', '_blank', 'noopener,noreferrer')">
-                                        <input type="button" class="card_button" value="산출물 PDF" onclick="window.open(S3 + 'problemsolve/ir.pdf', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="problemsolve card_item">
-                                <img class="problemsolve card_img" src="./img/play.png">
-                                <div class="problemsolve card_info">
-                                    <div class="problemsolve card_title">서비스 플로우 · 유저 시나리오 설계</div>
-                                    <p>사용자 행동이 중요한 서비스에서는 시나리오 중심의 스토리보드를,<br>조건과 분기가 많은 서비스에서는 상태 중심의 플로우차트를 활용하여 설계를 진행했습니다.</p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="브라우저앱 플로우차트 PDF" onclick="window.open(S3 + 'problemsolve/flowchart.pdf', '_blank', 'noopener,noreferrer')">
-                                        <input type="button" class="card_button" value="주유기록 스토리보드 PDF" onclick="window.open(S3 + 'problemsolve/storyboard.pdf', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="problemsolve card_item">
-                                <img class="problemsolve card_img" src="./img/web.png">
-                                <div class="problemsolve card_info">
-                                    <div class="problemsolve card_title">협업 프로세스 설계</div>
-                                    <p>좋은 설계는 제품 뿐만 아니라, 팀의 일하는 방식에도 필요하다고 생각합니다.<br>업무 흐름이 어떻게 흘러가야 하는지, 어떤 시점에 누가 무엇을 확인해야 하는지를 문서와 템플릿으로 정리하여 의사소통 비용을 줄이는 역할을 했습니다.</p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="협업 프로세스 설계 PDF" onclick="window.open(S3 + 'problemsolve/collab.pdf', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collab_group" id="core_02">
-                        <h1>인사이트를 <underline>기록하고 나눕니다</underline></h1><br>
-                        <b>기록된 경험은 자산이 되고, 성장의 밑거름이 됩니다.</b>
-                        <p>업무 중 맞닥뜨린 문제와 해결 과정을 문서화하여 불필요한 비용을 줄이는 데 보람을 느낍니다.<br>직접 이해하고 체득한 지식은 반드시 문서나 도구로 정리하여, 팀원들이 즉시 실무에 활용할 수 있는 형태로 공유합니다.</p>
-                        <p>기록의 힘으로 개인의 성장을 넘어 팀의 생산성을 높이는 시너지를 내는 것을 목표로 합니다.</p>
-                        <div class="collab card_list">
-                            <div class="collab card_item">
-                                <img class="collab card_img" src="./img/post_thumbnail_01.png" alt="시장 분석 및 비즈니스 설계 자료"> 
-                                <div class="collab card_info">
-                                    <div class="collab card_title">사내 사이드 프로젝트 회고</div>
-                                    <p>프로젝트 종료 후, 성과와 개선점을 기록했습니다.</p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="포스트 보기" onclick="window.open('https://velog.io/@nogglee/retrospect-1', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="collab card_item">
-                                <img class="collab card_img" src="./img/post_thumbnail_02.png" alt="시장 분석 및 비즈니스 설계 자료"> 
-                                <div class="collab card_info">
-                                    <div class="collab card_title">사용자 중심 영상 가이드</div>
-                                    <p>복잡한 도구 사용법을 영상과 문서로 쉽게 풀어서 정리했습니다.</p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="영상보기" onclick="window.open('https://youtu.be/zFiU3F1b85c', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="collab card_item">
-                                <img class="collab card_img" src="./img/post_thumbnail_03.png" alt=""> 
-                                <div class="collab card_info">
-                                    <div class="collab card_title">협업 효율을 높이는 템플릿</div>
-                                    <p>서스 출시 전 테스트 절차를 시스템화하여 소통 비용을 줄였습니다.</p>
-                                    <div class="card_button_group">
-                                        <input type="button" class="card_button" value="템플릿 보기" onclick="window.open('https://www.notion.com/ko/templates/qa2', '_blank', 'noopener,noreferrer')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="about_section" id="about-content"></div>
             </div>
 
+            <!-- 프로젝트 -->
+            <div class="container_inner">
+                <div class="experiences_list" id="projects-content"></div>
+            </div>
 
             <!-- 경력 -->
-            <span class="sticky_sentinel"></span>
-            <div class="section_title section_anchor" id="career">
-                <div class="section_title_inner">
-                    <div class="dot_group">
-                        <a href="#core"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#career" style="z-index: 2;"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#projects"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#activities"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                    </div>
-                    <div class="sticky_inner"><h1>Career</h1></div>
-                </div>
-            </div>
-            
             <div class="container_inner">
-                <div class="experiences_list">
-                    <div class="experiences_item career_item">
-                    
-                    <div class="career_left">
-                        <img class="career_logo_wrap" src="./img/ibrdos.png" alt="IBRDOS 로고">
-                        <div class="career_info">
-                            <h1 class="career_company">IBRDOS</h1>
-                            <div class="career_role">PM · Product</div>
-                            <div class="career_period">2022.09 ~ 2025.11</div>
-                        </div>
-                    </div>
-
-                    <div class="career_right">
-
-                        <!-- 1 -->
-                        <div>
-                            <div class="career_title_block">
-                                <h3 class="career_title">비즈니스 가설 검증 도구</h3>
-                                <input type="button" class="text_button" value="서비스 보기 ↗" onclick="window.open('https://godmulju.vercel.app/', '_blank', 'noopener,noreferrer')">
-                            </div>
-                            <div class="career_summary_box">
-                                신규 서비스 런칭 전, <b>유저가 실제로 어떤 메시지와 가치에 반응하는지 검증하기 위해</b> MBTI 기반 심리테스트 형태의 유입 실험 도구를 직접 기획·개발·배포했습니다.<br>
-                                테스트 결과를 통해 서비스 랜딩페이지로 자연스럽게 유입되는 구조를 설계했습니다.
-                            </div>
-
-                            <div class="career_tags">
-                                <span>React</span>
-                                <span>TailwindCSS</span>
-                                <span>Vercel</span>
-                                <span>Firebase</span>
-                                <span>Figma</span>
-                            </div>
-
-                            <div class="career_headline">비즈니스 가설을 ‘실험 가능한 형태’로 만들었습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">마케팅 방식만으로는 초기 유저 반응 확보 어려움</div>
-                                <ul class="career_list">
-                                    <li>랜딩페이지와 SEO만으로는 신규 서비스에 대한 관심도를 파악하는 데 한계가 존재</li>
-                                    <li>개발 리소스 부족으로 신규 유입 도구 제작은 우선순위에서 계속 밀리는 상황</li>
-                                </ul>
-                                <br>
-                                <div class="career_block_title">직접 실험 가능한 형태로 문제 전환</div>
-                                <ul class="career_list">
-                                    <li>심리테스트라는 낮은 진입 장벽의 포맷을 선택해 참여를 유도</li>
-                                    <li>테스트 완료 시점에 서비스 가치와 연결된 메시지를 노출</li>
-                                    <li>사용자 응답 데이터를 Firebase에 적재해, 추측이 아닌 실제 반응으로 가설을 검증</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">논리적 설계를 통해 전환 흐름을 만들었습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">단순 체험으로 끝나지 않고, 행동으로 이어지도록 흐름을 설계</div>
-                                <ul class="career_list">
-                                    <li>유저의 테스트 응답과 결과 맥락을 분석해, 결과 페이지 내에 <b>맞춤형 CTA</b> 배치</li>
-                                    <li>테스트 → 결과 → 랜딩페이지로 이어지는 경로를 끊기지 않게 설계</li>
-                                    <li>심리테스트 콘텐츠로 시작해 서비스에 대한 호기심을 유발할 수 있는 메세지 전달</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <br><br><br>
-                        
-                        <!-- 2 -->
-                        <div>
-                            <div class="career_title_block">
-                                <h3 class="career_title">팀 생산성 향상 도구</h3>
-                                <input type="button" class="text_button" value="서비스 보기 ↗" onclick="window.open('https://urbuild.vercel.app/', '_blank', 'noopener,noreferrer')">
-                            </div>
-                            <div class="career_summary_box">
-                                GA4 측정을 위해 UTM 파라미터가 포함된 URL을 수작업으로 생성하는 과정에서, <b>반복적인 시간 비용과 입력 오류로 인해 측정이 생략되는 운영 리스크를 인식했습니다.</b><br>
-                                개인 숙련도에 의한 영향력을 줄이기 위해 URL 생성 과정을 도구화했습니다.
-                            </div>
-
-                            <div class="career_tags">
-                                <span>React</span>
-                                <span>TailwindCSS</span>
-                                <span>Vercel</span>
-                                <span>Firebase</span>
-                                <span>Figma</span>
-                            </div>
-
-                            <div class="career_headline">작은 불편함을 비즈니스 관점에서 리스크로 정의했습니다.</div>
-
-                            <div class="career_block">
-                                <div class="career_block_title">업무 흐름을 방해하던 반복 비용 제거</div>
-                                <ul class="career_list">
-                                    <li>UTM 파라미터 조합을 매번 직접 입력해야 하는 번거로운 작업 반복</li>
-                                    <li>파라미터 누락·오타로 인한 데이터 정확도 저하</li>
-                                    <li>링크 생성 피로도로 인해 <b>측정 자체가 생략되는 운영 리스크</b> 확인</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">도구를 활용해 팀의 업무 방식을 최적화했습니다.</div>
-
-                            <div class="career_block">
-                                <div class="career_block_title">UTM 개념에 익숙하지 않은 사용자도 사용 가능한 UX 설계</div>
-                                <ul class="career_list">
-                                    <li>UTM 파라미터 입력 항목을 질문 형태로 구성</li>
-                                    <li>입력값을 기반으로 URL을 자동 조합해 <b>실수 가능성을 원천적으로 제거</b></li>
-                                    <li>반복 작업 시간을 단축해 팀 전체의 업무 흐름을 빠르게 개선</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <br><br><br>
-
-                        <!-- 3 -->
-                        <div>
-                            <div class="career_title_block">
-                                <h3 class="career_title">PAWPAWNUT Biz</h3>
-                                <input type="button" class="text_button" value="서비스 보기 ↗" onclick="window.open('https://biz.pawpawnut.com/', '_blank', 'noopener,noreferrer')">
-                            </div>
-                            <div class="career_summary_box">
-                                오프라인 반려동물 케어 업종을 위한 CRM 솔루션 '포포넛 Biz'의 제품 생애주기 전반을 PM으로서 리드했습니다.<br>
-                                <b>시장 분석부터 현장 밀착형 인터뷰, 가격 모델 설계 및 운영 데이터 기반의 제품 고도화</b>까지, 고객 접점의 인사이트를 실제 제품의 핵심 기능으로 구현했습니다.
-                            </div>
-
-                            <div class="career_tags">
-                                <span class="career_tag">Product Management</span>
-                                <span class="career_tag">User Research</span>
-                                <span class="career_tag">Pricing Strategy</span>
-                                <span class="career_tag">Data-driven Improvement</span>
-                            </div>
-
-                            <div class="career_headline">현장에서 직접 보고 들으며 '진짜 문제'를 정의했습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">100여 개 업장 방문을 통한 문제 발굴</div>
-                                <ul class="career_list">
-                                    <li>매장을 직접 방문하여 사장님의 실제 작업 흐름 관찰</li>
-                                    <li>기존 솔루션 사용 시 발생하는 기능적 제약과 불편함 인터뷰</li>
-                                    <li>경쟁 제품이 해결하지 못한 현장의 세밀한 요구사항 발굴</li>
-                                    <li>수집된 피드백을 바탕으로 제품의 핵심 차별화 기능 우선순위 설정</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">사용자 의견에서 제품 개선 방향성을 찾았습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">사용자 불편을 기술적 요구사항으로 번역</div>
-                                <ul class="career_list">
-                                    <li>기술 용어 대신 사용자가 이해하기 쉬운 언어로 풀어서 안내</li>
-                                    <li>문의 유형별 가이드를 제작해 빠르고 일관된 응대 환경 구축</li>
-                                    <li>단순 불만에서 구조적 결함을 파악해 재현 시나리오로 정리</li>
-                                    <li>재현 시나리오를 기술적 요구사항으로 정의하여 개발팀에 전달</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">데이터를 기반으로 제품을 개선했습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">데이터 기반 다이나믹 요금제 및 시뮬레이터 설계</div>
-                                <ul class="career_list">
-                                    <li>기존 요금제의 이탈 원인을 분석해 맞춤형 다이나믹 요금제 제안</li>
-                                    <li>요금제 선택의 심리적 장벽을 낮추기 위한 <input type="button" class="text_button" value="요금제 시뮬레이터 ↗" onclick="window.open('https://biz.pawpawnut.com/simulation', '_blank', 'noopener,noreferrer')">를 기획</li>
-                                    <li>시뮬레이터 내 행동 데이터를 수집 가능하도록 설계</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 프로젝트 -->
-            <span class="sticky_sentinel"></span>
-            <div class="section_title section_anchor" id="projects">
-                <div class="section_title_inner">
-                    <div class="dot_group">
-                        <a href="#core"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#career"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#projects" style="z-index: 2;"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#activities"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                    </div>
-                    <div class="sticky_inner"><h1>Projects</h1></div>
-                </div>
-            </div>
-            
-            <div class="container_inner">
-                <div class="experiences_list">
-
-                    <!-- Project 01 -->
-                    <div class="experiences_item career_item">
-                        <div class="career_left">
-                            
-                            <img class="career_logo_wrap" src="./img/fuellog.png" alt="주유기록 썸네일">
-                            <div class="career_info">
-                                <h1 class="career_company">주유기록</h1>
-                                <div class="career_period">2024.04 ~ 운영중</div>
-                                <div class="career_links">
-                                    <a href="https://play.google.com/store/apps/details?id=com.supereasy.fuellog" target="_blank"><img src="./img/icon-googleplay.png" alt="Google Play"></a>
-                                    <a href="https://apps.apple.com/kr/app/id6476742486" target="_blank"><img src="./img/icon-appstore.png" alt="App Store"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="career_right">
-                            <div class="career_summary_box">
-                                주유 기록을 한 곳에서 관리하고, 월별 인사이트까지 제공하는 기록 서비스입니다.<br>
-                                국내 사용자 수가 2,500명에 도달하여 더 큰 시장에서 반응을 검증하기 위해 <b>글로벌 확장</b>을 결정했고,
-                                이에 맞춰 <b>다국어 적용 프로세스·인증 UX·요구사항 체계</b>를 함께 재정의했습니다.
-                            </div>
-
-                            <div class="career_tags">
-                                <span>UX Design</span>
-                                <span>Globalization</span>
-                                <span>Design System</span>
-                                <span>Documentation</span>
-                            </div>
-
-                            <div class="career_headline">입력은 최소화하고 기록의 효용성을 높였습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">UX 최적화 및 데이터 시각화</div>
-                                <ul class="career_list">
-                                    <li>반복 입력 피로도를 줄이기 위한 입력 필드 최소화 및 자동 계산 로직 설계</li>
-                                    <li>단순 기록을 넘어 '전월 대비 비용 추세' 등 데이터 기반 인사이트 제공</li>
-                                    <li>월별 비교 대시보드를 통해 주유/지출 패턴을 한눈에 파악하도록 구성</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">글로벌 확장을 위한 서비스 구조를 재설계했습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">효율적인 다국어 대응 프로세스 구축</div>
-                                <ul class="career_list">
-                                    <li>AI를 활용해 국가별 정서에 최적화된 7개 국어 번역 가이드 마련</li>
-                                    <li>번역 데이터를 React Context API 리소스 파일로 변환하는 스크립트를 작성</li>
-                                    <li>수동 번역 관리의 휴먼 에러를 방지하고 다국어 적용 속도를 단축</li>
-                                </ul>
-                                <br>
-                                <div class="career_block_title">글로벌 유저 진입 장벽 해소 및 계정 체계 개편</div>
-                                <ul class="career_list">
-                                    <li>국가별 휴대폰 인증 제약을 해결하기 위해 아이디 기반 로그인 체계로 전환</li>
-                                    <li>기존 유저 2,500명이 이탈 없이 계정을 전환할 수 있도록 UX 시나리오 설계</li>
-                                    <li>서버 비용 절감을 위한 AWS 환경 점검 및 독립 서버 이전 의사결정 참여</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">팀원의 판단 비용을 줄이는 기획 가이드를 확립했습니다.</div>
-                            <div class="career_block">
-                                <div class="career_block_title">시나리오 구조화 및 소통 효율화</div>
-                                <ul class="career_list">
-                                    <li>데이터 관계를 사전 정의하여 개발자가 로직 설계에 고민하는 시간 단축</li>
-                                    <li>디자인 시스템 기준을 통일해 1:1 검수 과정에서 발생하는 수정 리소스 최소화</li>
-                                    <li>화면별 목적과 예외 케이스를 문서화하여 불필요한 질의응답 오버헤드 방지</li>
-                                    <li>
-                                        <b>사용자 피드백 기반의 지속적인 제품 개선</b>
-                                        <input type="button" class="text_button" value="이슈 트래킹 페이지 보기 ↗" onclick="window.open('https://clean-crocus-36c.notion.site/QA-2c32ee66b06c81f6a092d99bc422377f?source=copy_link', '_blank')">
-                                        <ul>
-                                            <li>'우선순위 관리'를 위해 유저 건의사항을 이슈 리스트로 관리</li>
-                                            <li>개발자와 실시간으로 공유되는 프로세스를 리드하여 제품 완성도 상향</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 02 -->
-                    <div class="experiences_item career_item">
-                        <div class="career_left">
-                            <img class="career_logo_wrap" src="./img/lettoast.png" alt="랫츠토스트 썸네일">
-                            <div class="career_info">
-                                <h1 class="career_company">랫츠토스트</h1>
-                                <div class="career_period">2024.11</div>
-                                <div class="career_links">
-                                    <a href="https://github.com/nogglee/letstoast" target="_blank"><img src="./img/icon-github.png" alt="GitHub"></a>
-                                    <a href="https://letstoast.vercel.app/ko" target="_blank"><img src="./img/icon-web.png" alt="Demo"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="career_right">
-                            <div class="career_summary_box">
-                                연설 모임(토스트마스터즈)에서 연설 시간에 맞춰 색상 카드를 바꿔주는 ‘시간지기’ 역할을 돕기 위한 디지털 타이머입니다.<br>
-                                시간지기가 <b>동료의 연설 내용에 더 깊이 몰입하고 피드백을 나눌 수 있는 환경</b>을 만들기 위해 <b>시각적 피드백</b> 도구를 개발했습니다.
-                            </div>
-
-                            <div class="career_tags">
-                                <span class="career_tag">React</span>
-                                <span class="career_tag">Vercel</span>
-                                <span class="career_tag">i18n</span>
-                            </div>
-
-                            <div class="career_headline">‘시간 체크’에서 벗어나, 연설에 집중할 수 있게 했습니다.</div>
-
-                            <div class="career_block">
-                                <div class="career_block_title">시간지기의 번거로움을 줄여주는 자동화 설계</div>
-                                <ul class="career_list">
-                                    <li>수동 카드 교체로 인해 연설 내용을 놓치게 되는 사용자 문제 발견</li>
-                                    <li>연설 종류별 규정 시간(그린·옐로·레드)에 맞춘 자동 UI 전환 로직 구현</li>
-                                    <li>누구나 역할 수행에 대한 부담 없이 연설 경청과 피드백에만 집중하도록 유도</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">원격 환경에서도 한눈에 시간을 알 수 있게 했습니다.</div>
-
-                            <div class="career_block">
-                                <div class="career_block_title">물리적 제약을 타파하는 직관적인 시각 피드백</div>
-                                <ul class="career_list">
-                                    <li>온라인 화면 공유 시 작은 숫자 타이머가 가진 가독성 한계에 주목</li>
-                                    <li>곁눈질만으로 남은 시간을 알 수 있게 <b>화면 전체 배경색을 전환하는 방식</b> 도입</li>
-                                    <li>저해상도나 모바일 등 열악한 시청 환경에서도 확실한 시각적 신호 전달</li>
-                                </ul>
-                            </div>
-
-                            <div class="career_headline">국적에 상관없이 누구나 같은 편리함을 누리도록 했습니다.</div>
-
-                            <div class="career_block">
-                                <div class="career_block_title">누구에게나 열려 있는 다국어 UI</div>
-                                <ul class="career_list">
-                                    <li>외국인 참여자가 함께하는 글로벌 모임 특성을 고려한 한국어/영어 동시 지원</li>
-                                    <li>i18n 라이브러리를 통해 언어 전환 시에도 로직이 안정적으로 동작하도록 설계</li>
-                                    <li>참여자 구성에 관계없이 언어 장벽 없는 유연한 모임 환경 조성</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="experiences_list" id="career-content"></div>
             </div>
 
             <!-- 활동 -->
-            <span class="sticky_sentinel"></span>
-            <div class="section_title section_anchor" id="activities">
-                <div class="section_title_inner">
-                    <div class="dot_group">
-                        <a href="#core"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#career"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#projects"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                        <a href="#activities" style="z-index: 2;"><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" fill="#FFCE2E" stroke="none" stroke-width="2" /></svg></a>
-                    </div>
-                    <div class="sticky_inner"><h1>Activities</h1></div>
-                </div>
+            <div class="container_inner">
+                <div class="activities_list" id="activities-content"></div>
             </div>
-            
-            <div class="activities_list">
-                
-                <!-- Activity 01 -->
-                <div class="activity_item">
-                    <h1>프로그래머스 웹 풀스택 데브코스 9기</h1>
-                    <p class="activity_period">2025.12 ~ ing</p>
-                    <p class="activity_desc">현재 TypeScript를 기반으로 Node.js, Express를 활용한 REST API 서버 개발과 React를 활용한 프론트엔드 개발을 병행하며 풀스택 개발 역량을 강화하고 있습니다. 백엔드에서는 라우터, 컨트롤러, 미들웨어 구조를 기반으로 요청 처리 흐름을 설계하고, TypeScript를 통해 데이터 타입을 명확히 정의하여 안정적인 서버를 구현하는 방식을 학습하고 있습니다.
-                        <input type="button" class="text_button" value="학습로그 보기 ↗" onclick="window.open('https://github.com/nogglee/programmers-devcourse', '_blank', 'noopener,noreferrer')">
-                    </p>
-                    
-                </div>
-            </div>
-            
-            
+
         </div>
-        
+
         <div id="footer"><p>Copyright © 2026 Nogglee. All rights reserved.</p></div>
-        
-        <script>
-        (function () 
-            {
-                const titles = document.querySelectorAll('.section_title');
-                titles.forEach((title) => 
-                {
-                    const sentinel = title.previousElementSibling;
-                    if (!sentinel || !sentinel.classList || !sentinel.classList.contains('sticky_sentinel')) return;
 
-                    const observer = new IntersectionObserver
-                    (
-                        ([entry]) => { title.classList.toggle('is-stuck', !entry.isIntersecting); },
-                        { root: null, rootMargin: '0px 0px 0px 0px', threshold: 0, }
-                    );
+        <!-- Templates -->
+        <template id="tpl-nav-dot">
+            <a><svg width="24" height="24" class="dot"><circle cx="12" cy="12" r="12" stroke="none" stroke-width="2" /></svg></a>
+        </template>
 
-                    observer.observe(sentinel);
-                });
-            }
-        )();
-        </script>
+        <template id="tpl-section-title">
+            <span class="sticky_sentinel"></span>
+            <div class="section_title section_anchor">
+                <div class="section_title_inner">
+                    <div class="dot_group"></div>
+                    <div class="sticky_inner"><h1></h1></div>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-career-item">
+            <div class="experiences_item career_item">
+                <div class="career_left">
+                    <img class="career_logo_wrap">
+                    <div class="career_info">
+                        <h1 class="career_company"></h1>
+                        <div class="career_role"></div>
+                        <div class="career_period"></div>
+                        <div class="career_links"></div>
+                    </div>
+                </div>
+                <div class="career_right"></div>
+            </div>
+        </template>
+
+        <template id="tpl-career-link">
+            <a target="_blank"><img></a>
+        </template>
+
+        <template id="tpl-career-title-block">
+            <div class="career_title_block">
+                <h3 class="career_title"></h3>
+            </div>
+        </template>
+
+        <template id="tpl-text-button">
+            <input type="button" class="text_button">
+        </template>
+
+        <template id="tpl-career-tag">
+            <span></span>
+        </template>
+
+        <template id="tpl-activity-item">
+            <div class="activity_item">
+                <h1></h1>
+                <p class="activity_period"></p>
+                <p class="activity_desc"></p>
+            </div>
+        </template>
+
     </body>
 </html>
