@@ -36,7 +36,7 @@ h2 { font-size: var(--font-size-h2); margin: 0.5rem 0; color: var(--color-text-s
 h3 { font-size: var(--font-size-h3); margin: 0.4rem 0; color: var(--color-text-tertiary); font-weight: 400; }
 p { font-size: var(--font-size-body); margin: 0.3rem 0; color: var(--color-text-body); line-height: 1.6; font-weight: 400; }
 q { color: var(--color-text-muted); font-style: italic; quotes: none; }
-b { font-weight: 500; }
+b { font-weight: 600; }
 
 highlight { color: var(--color-accent); }
 underline { border-bottom: 2px solid var(--color-accent); padding-bottom: 2px;}
@@ -104,6 +104,7 @@ white { color: var(--color-text-primary); }
 
 .career_right { border-left: 1px solid var(--color-border); padding-left: 28px; padding-bottom: 40px;}
 .career_title_block { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0.5rem 0; }
+.career_title_links { display: flex; flex-direction: row; align-items: center; gap: 0.8rem; }
 .career_title { margin-top: 0; margin-bottom: 12px; color: var(--color-text-secondary); font-weight: 700; }
 .text_button { padding: 0 0 0.3rem 0; background-color: transparent; border: none; border-bottom: 1px solid var(--color-accent); color: var(--color-accent); font-weight: 700; cursor: pointer; transition: all 0.2s ease; }
 .text_button:hover { border-bottom: 1px solid var(--color-accent-hover); color: var(--color-accent-hover); }
