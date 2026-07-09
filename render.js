@@ -148,8 +148,9 @@ function buildCareerEntry(entry) {
     if (entry.title) {
         const titleBlock = useTemplateEl('tpl-career-title-block');
         titleBlock.querySelector('.career_title').textContent = entry.title;
-        if (entry.serviceUrl) titleBlock.appendChild(buildButton('tpl-text-button', '서비스 보기 ↗', entry.serviceUrl));
-        if (entry.extraLinks) entry.extraLinks.forEach((l) => titleBlock.appendChild(buildButton('tpl-text-button', l.label, l.url)));
+        const linksWrap = titleBlock.querySelector('.career_title_links');
+        if (entry.serviceUrl) linksWrap.appendChild(buildButton('tpl-text-button', '서비스 보기 ↗', entry.serviceUrl));
+        if (entry.extraLinks) entry.extraLinks.forEach((l) => linksWrap.appendChild(buildButton('tpl-text-button', l.label, l.url)));
         wrapper.appendChild(titleBlock);
     }
 
