@@ -62,8 +62,12 @@ function buildSectionTitle(navItem) {
 function insertSectionTitles() {
     SITE.nav.forEach((navItem) => {
         const contentEl = document.getElementById(`${navItem.id}-content`);
-        const anchor = contentEl.closest('.container_inner') || contentEl;
-        anchor.parentNode.insertBefore(buildSectionTitle(navItem), anchor);
+        const inner = contentEl.closest('.container_inner') || contentEl;
+        const group = document.createElement('div');
+        group.className = 'section_group';
+        inner.parentNode.insertBefore(group, inner);
+        group.appendChild(buildSectionTitle(navItem));
+        group.appendChild(inner);
     });
 }
 
