@@ -420,7 +420,7 @@ const SITE = {
             logo: { src: './img/nullnull.png', alt: '널널 썸네일' },
             company: '널널',
             role: '부트캠프 · BE(팀원)',
-            period: '2026.04 ~ 2026.06',
+            period: '2026.04 ~ 2026.05',
             links: [
                 { href: 'https://github.com/nogglee-crew/nullnull', img: './img/icon-github.png', alt: 'GitHub' },
                 { href: 'https://www.nznz.app/', img: './img/icon-web.png', alt: 'Demo' },
