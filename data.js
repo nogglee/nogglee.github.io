@@ -366,8 +366,8 @@ const SITE = {
             ],
             entries: [
                 {
-                    title: '연설 모임 시간지기 타이머',
-                    summaryHtml: '연설 모임(토스트마스터즈)에서 연설 시간에 맞춰 색상 카드를 바꿔주는 ‘시간지기’ 역할을 돕기 위한 디지털 타이머입니다.<br>\n기획부터 개발, 다국어 대응, 배포까지 개인 프로젝트로 진행했습니다.',
+                    title: '연설 시간관리 자동 타이머',
+                    summaryHtml: '<q>1인 ・ 기획 ・ 기능 구현 100%</q><br>토스트마스터즈 모임에서 직접 시간지기 역할을 맡았는데, 카드 넘기는 데 신경 쓰다 보니 정작 듣고 싶었던 연설 내용을 놓치는 게 아쉬웠습니다. 저 말고도 다른 시간지기들이 같은 어려움을 겪을 거라 생각해 다같이 쓸 수 있는 디지털 타이머로 만들었고, 온라인 모임에서도 사용했습니다.',
                     tags: ['React', 'React Router', 'react-i18next', 'TailwindCSS', 'Webpack', 'Vercel'],
                     blocks: [
                         {
@@ -432,7 +432,7 @@ const SITE = {
                         { label: 'API 문서 ↗', url: 'https://api.nznz.app/api-docs' },
                         { label: 'Data 모델링 ↗', url: 'https://nogglee.notion.site/Data-9ace8fe23c0e82139d5481001b1ab9c4?pvs=74' },
                     ],
-                    summaryHtml: '<q>5인 ・ BE 기능구현 70% ・ API 설계 80% ・ 데이터 모델링 100%</q><br>여러 참여자의 가능 시간과 출발지를 모아 약속 장소·시간 후보를 조율하는 서비스입니다.<br>\n백엔드 구현을 담당했고, 전반적인 서비스 기획과 데이터 설계도 함께 맡았습니다.',
+                    summaryHtml: '<q>5인 ・ BE 기능구현 70% ・ API 설계 80% ・ 데이터 모델링 100%</q><br>회의 일정을 잡을 때마다 서로 가능한 시간을 물어보는 메시지가 끝없이 오가는 게 번거로웠습니다. 각자 안 되는 시간만 지우면 알고리즘이 가능한 시간대를 정해주고, 오프라인 모임일 경우를 대비해 각자 출발지 좌표 기반 중앙 지점의 약속 장소를 골라주는 서비스입니다.',
                     tags: ['TypeScript', 'NestJS', 'Prisma', 'PostgreSQL', 'Supabase', 'Jest', 'Swagger'],
                     blocks: [
                         {
@@ -537,7 +537,7 @@ const SITE = {
         {
             title: '프로그래머스 웹 풀스택 데브코스 9기',
             period: '2025.12 ~ 2026.06',
-            descHtml: 'Git·GitHub 협업부터 Node.js·Express·Docker·MariaDB 기반 백엔드, RDBMS·JWT 인증, REST API 설계, React·TypeScript·Redux·Testing 프론트엔드까지 풀스택 커리큘럼을 이수했습니다. BOOK-STORE·TODO-LIST 등 미니 프로젝트로 매 단계를 직접 구현하며 학습했습니다.',
+            descHtml: 'Git·GitHub 협업부터 Node.js·Express·Docker·MariaDB 기반 백엔드, RDBMS·JWT 인증, REST API 설계, React·TypeScript·Redux·Testing 프론트엔드까지 풀스택 커리큘럼을 이수했습니다.',
             button: { label: '학습로그 보기 ↗', url: 'https://github.com/nogglee/programmers-devcourse' },
         },
         {
