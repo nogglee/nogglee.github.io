@@ -222,13 +222,13 @@ const SITE = {
                 { href: 'https://github.com/nogglee-crew/todam', img: './img/icon-github.png', alt: 'GitHub' },
                 { href: 'https://todam.app', img: './img/icon-web.png', alt: 'Demo' },
                 { href: 'https://www.figma.com/design/rn4Vgem0Uj28suP8TEZMbU/%ED%86%A0%EB%8B%B4-todam?node-id=8542-18666&t=Vb5ZUTnhJAmg9FpN-1', img: './img/icon-figma.png', alt: 'Figma' },
+                { href: 'https://youtu.be/MZ4OeSMte1s', img: './img/icon-youtube.png', alt: 'YouTube' },
             ],
             entries: [
                 {
-                    title: '원데이 클래스 예약관리 플랫폼',
-                    // TODO: 상장 이미지 업로드되면 확장자 확인(현재 .png로 가정)
-                    extraLinks: [{ label: '수상 내역 보기 ↗', url: S3 + 'certificate-01.png' }],
-                    summaryHtml: '<b>부트캠프 최종 프로젝트 · CTO 선정 1위</b><br>\n공방 원데이 클래스 예약·운영을 위한 B2C/B2B 플랫폼입니다.<br>\nNext.js 기반 web/admin 모노레포를 구성하고, 공통 UI 패키지·API Contract·CI/CD 파이프라인을 설계해 팀 개발 속도와 배포 안정성을 개선했습니다.',
+                    title: '공방 원데이 클래스 예약을 위한 B2C/B2B 플랫폼',
+                    extraLinks: [{ label: '수상 내역 보기 ↗', url: S3 + 'certificate-01.pdf' }],
+                    summaryHtml: '<b>부트캠프 최종 프로젝트 · CTO 선정 1위</b><br><q>5인 ・ FE 기능구현 50% ・ 아키텍쳐 설계 70% ・ 디자인시스템 100%</q><br>\n새로운 취미를 찾아 도자기 공방에 방문했다가, 사장님이 예약자·배송지 정보를 수기로 관리하고 완성까지 한 달 가까이 걸리는데도 진행 상황을 알 방법이 없어 문의 전화가 잦을 수밖에 없겠다는 생각에서 시작한 프로젝트입니다.',
                     tags: ['TypeScript', 'Next.js', 'GitHub Actions', 'Docker', 'AWS EC2', 'Claude Code'],
                     blocks: [
                         {
@@ -286,12 +286,13 @@ const SITE = {
                 { href: 'https://github.com/prgrms-fullcycle-devcourse/webfull_9_10_Tomado_FE', img: './img/icon-github.png', alt: 'GitHub' },
                 { href: 'https://tomado-dev.vercel.app', img: './img/icon-web.png', alt: 'Demo' },
                 { href: 'https://www.figma.com/design/7vgz8rPzlc7PdjtfyDtsKu/Toma-do?node-id=2-3&t=4BucU4yFjBMX451t-1', img: './img/icon-figma.png', alt: 'Figma' },
+                { href: 'https://youtu.be/kMjJQ9lNye4', img: './img/icon-youtube.png', alt: 'YouTube' },
             ],
             entries: [
                 {
                     title: '포모도로 타이머 기반 집중 관리 도구',
                     extraLinks: [{ label: '개발기 보기 ↗', url: 'https://velog.io/@nogglee/series/tomado' }],
-                    summaryHtml: '포모도로 타이머로 집중 세션을 관리하고, 회고 시스템으로 기록을 추적하는 집중 관리 도구입니다. 프론트엔드 개발 / UX 설계 / 디자인 시스템 구축 / 성능 최적화를 담당했습니다.',
+                    summaryHtml: '<b>부트캠프 세미 프로젝트 1위</b><br><q>5인 ・ FE 기능구현 70% ・ 아키텍쳐 설계 40% ・ 디자인시스템 100%</q><br>\n멘토링에서 회고할 만한 것들을 미루지 말고 그때그때 키워드라도 남겨보라는 피드백을 받고, 회고를 카테고리별 템플릿과 검색으로 관리할 수 있는 도구를 만들었습니다. 새로 학습한 것도 바로 메모할 수 있도록 집중 관리 시스템과 통합했습니다.',
                     tags: ['TypeScript', 'React', 'Zustand', 'TanStack Query', 'Orval'],
                     blocks: [
                         {
@@ -427,7 +428,11 @@ const SITE = {
             entries: [
                 {
                     title: '약속 장소·시간 조율 서비스',
-                    summaryHtml: '여러 참여자의 가능 시간과 출발지를 모아 약속 장소·시간 후보를 조율하는 서비스입니다.<br>\n백엔드 구현을 담당했고, 전반적인 서비스 기획과 데이터 설계도 함께 맡았습니다. <input type="button" class="text_button" value="API 문서 ↗" onclick="window.open(\'https://api.nznz.app/api-docs\', \'_blank\', \'noopener,noreferrer\')"> <input type="button" class="text_button" value="Data 모델링 ↗" onclick="window.open(\'https://nogglee.notion.site/Data-9ace8fe23c0e82139d5481001b1ab9c4?pvs=74\', \'_blank\', \'noopener,noreferrer\')">',
+                    extraLinks: [
+                        { label: 'API 문서 ↗', url: 'https://api.nznz.app/api-docs' },
+                        { label: 'Data 모델링 ↗', url: 'https://nogglee.notion.site/Data-9ace8fe23c0e82139d5481001b1ab9c4?pvs=74' },
+                    ],
+                    summaryHtml: '<q>5인 ・ BE 기능구현 70% ・ API 설계 80% ・ 데이터 모델링 100%</q><br>여러 참여자의 가능 시간과 출발지를 모아 약속 장소·시간 후보를 조율하는 서비스입니다.<br>\n백엔드 구현을 담당했고, 전반적인 서비스 기획과 데이터 설계도 함께 맡았습니다.',
                     tags: ['TypeScript', 'NestJS', 'Prisma', 'PostgreSQL', 'Supabase', 'Jest', 'Swagger'],
                     blocks: [
                         {
